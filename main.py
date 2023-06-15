@@ -13,11 +13,11 @@ class Book(db.Model):
     author = db.Column(db.String(250), nullable=False)
     rating = db.Column(db.Float, nullable=False)
 
-with app.app_context():
-    db.create_all()
-    new_book = Book(id=1, title="Harry Potter", author="J. K. Rowling", rating=9.3)
-    db.session.add(new_book)
-    db.session.commit()
+# with app.app_context():
+#     db.create_all()
+#     new_book = Book(id=1, title="Harry Potter", author="J. K. Rowling", rating=9.3)
+#     db.session.add(new_book)
+#     db.session.commit()
 all_books = []
 
 

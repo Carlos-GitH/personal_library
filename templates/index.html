@@ -13,7 +13,7 @@
     <ul>
         {%if book != [] %}
             {% for book in books: %}
-                <li>{{ book['book'] }} - {{ book['author'] }} - {{ book['rating'] }}</li>
+                <li>{{ book['title'] }} - {{ book['author'] }} - {{ book['rating'] }}</li>
             {% endfor %}
         {% endif %}
     </ul>
